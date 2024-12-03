@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect of TRAIN Law on SMEs</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1c1c1c, #3a3a3a);
+            color: #fff;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: #282828;
+            color: #FFD700;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #d4d4d4;
+        }
+
+        /* Content Section */
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            max-width: 1350px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .content-box {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .content-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 0;
+            color: #FFD700; /* Yellow for the section titles */
+        }
+
+        .info-item {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .info-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 1rem;
+        }
+
+        .info-item h3 {
+            font-size: 1.6rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color: #FFD700; /* Yellow for headings within info items */
+        }
+
+        .info-item p {
+            font-size: 1.1rem;
+            color: #e0e0e0;
+            line-height: 1.5;
+            cursor: pointer; /* Indicates clickability */
+            transition: color 0.3s ease;
+        }
+
+        /* Hover effect for paragraph */
+        .info-item p:hover {
+            color: #FFD700; /* Change to yellow on hover */
+        }
+
+        /* Darker color when clicked (active state) */
+        .info-item p:active {
+            color: #c29d00; /* Darken the color on click */
+        }
+
+        /* Hover effect for paragraph */
+        .durag p:hover {
+            color: #FFD700; /* Change to yellow on hover */
+        }
+
+        /* Darker color when clicked (active state) */
+        .durag p:active {
+            color: #c29d00; /* Darken the color on click */
+        }
+
+        .non-clickable {
+            color: #e0e0e0;
+            cursor: default;
+            pointer-events: none;
+        }
+
+        .subheading {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #fff; /* Normal text color */
+        }
+
+        /* Align "Importance and Benefits" section to the left */
+        .importance-benefits {
+            text-align: left;
+            margin-top: 1rem;
+            color: #e0e0e0;
+        }
+
+        /* Footer Style */
+        footer {
+            background: #282828;
+            padding: 1rem 0;
+            text-align: center;
+            color: #FFD700;
+            font-size: 1rem;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Intro Container */
+.intro-container {
+    flex-direction: column; /* Ensures this container stacks above others */
+    margin-bottom: 2rem; /* Adds spacing below the intro */
+    margin-top: 0.5rem;
+}
+
+.intro-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 1350px;
+    margin: 0 auto; /* Centers the intro box */
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content-box {
+                max-width: 100%;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            .info-item h3 {
+                font-size: 1.4rem;
+            }
+
+            .info-item p {
+                font-size: 1rem;
+            }
+
+            .subheading {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>THE EFFECT OF TRAIN LAW ON BUSINESS MANAGEMENT OF SMALL AND MEDIUM ENTERPRISES</h1>
+    </header>
+    <div class="content-container intro-container">
+        <div class="intro-box">
+            <div class="durag">
+                <p data-sound="sounds\010.mp3"> Business management plays a crucial role in adapting sales and cost strategies after the implementation of the TRAIN Law, as it affects pricing, taxation, and operational expenses. Effective management ensures that SMEs can adjust product pricing to remain competitive while maintaining profitability. Additionally, cost management becomes essential to offset increased tax-related expenses and sustain business growth.
+            </div>
+                <br>
+            </p>
+            <p>
+                <b>Here are some strategies to cope with the changes in the TRAIN Law that affect the business management of SMEs:</b>
+            </p>
+        </div>
+    </div>
+    <div class="content-container">
+        <!-- Sales Management Section -->
+        <div class="content-box">
+            <h2 class="section-title">Sales Management</h2>
+            <div class="info-item">
+                <p class="subheading" data-sound="sounds\000.mp3">Implement programs to engage and inform customers about the value and benefits of the products and services offered.</p>
+                <div class="importance-benefits">
+                    <p class="non-clickable"><strong>Importance and Benefits:</strong></p>
+                </div>
+            </div>
+            <div class="info-item">
+                <img src="pictures\001.png" alt="Builds Customer Loyalty">
+                <h3>Builds Customer Loyalty</h3>
+                <p data-sound="sounds\001.mp3">Highlighting the unique value of products increases trust and satisfaction, leading to repeat customers.</p>
+            </div>
+            <div class="info-item">
+                <img src="pictures\002.png" alt="Differentiates the Business">
+                <h3>Differentiates the Business</h3>
+                <p data-sound="sounds\002.mp3">Focuses on quality and benefits instead of price wars, allowing the business to stand out in a competitive market.</p>
+            </div>
+            <div class="info-item">
+                <img src="pictures\003.png" alt="Drives Sales Growth">
+                <h3>Drives Sales Growth</h3>
+                <p data-sound="sounds\003.mp3">Educated customers are more likely to perceive the products/services as worth the price, leading to increased purchases.</p>
+            </div>
+            <div class="info-item">
+                <img src="pictures\004.png" alt="Avoids Price Undercutting">
+                <h3>Avoids Price Undercutting</h3>
+                <p data-sound="sounds\004.mp3">Helps businesses avoid damaging profitability by focusing on value rather than lowering prices.</p>
+            </div>
+        </div>
+
+        <!-- Cost Management Section -->
+        <div class="content-box">
+            <h2 class="section-title">Cost Management</h2>
+            <div class="info-item">
+                <p class="subheading" data-sound="sounds\005.mp3">Study workforce allocation and adopt flexible staffing models.</p>
+                <div class="importance-benefits">
+                    <p class="non-clickable"><strong>Importance and Benefits:</strong></p>
+                </div>
+            </div>
+            <div class="info-item">
+                <img src="pictures\005.png" alt="Maintains Productivity">
+                <h3>Maintains Productivity</h3>
+                <p data-sound="sounds\006.mp3">Keeping the workforce stable ensures tasks are completed efficiently without overburdening remaining staff.</p>
+            </div>
+            <div class="info-item">
+                <img src="pictures\006.png" alt="Increases Employee Satisfaction">
+                <h3>Increases Employee Satisfaction</h3>
+                <p data-sound="sounds\007.mp3">Flexible staffing models improve morale by reducing job insecurity and offering better work-life balance.</p>
+            </div>
+            <div class="info-item">
+                <img src="pictures\007.png" alt="Reduces Costs">
+                <h3>Reduces Costs</h3>
+                <p data-sound="sounds\008.mp3">Adopting flexible staffing models enables businesses to minimize overtime and hiring costs while maintaining service quality.</p>
+            </div>
+            <div class="info-item">
+                <img src="pictures\008.png" alt="Improves Work-Life Balance">
+                <h3>Improves Work-Life Balance</h3>
+                <p data-sound="sounds\009.mp3">By offering more flexibility, businesses create a positive environment that encourages better employee retention.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 The Effect of TRAIN Law on SMEs | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Store the currently playing audio
+       // Store the currently playing audio
+let currentAudio = null;
+
+// Audio playback for paragraphs with data-sound attribute
+const paragraphs = document.querySelectorAll('.info-item p[data-sound], .intro-box p[data-sound]'); // Include intro-box here
+paragraphs.forEach(paragraph => {
+    paragraph.addEventListener('click', function () {
+        const audioSource = paragraph.getAttribute('data-sound');
+
+        // If a sound is already playing, stop it
+        if (currentAudio) {
+            currentAudio.pause(); // Pause the currently playing audio
+            currentAudio.currentTime = 0; // Reset the audio to the start
+        }
+
+        // Create a new Audio object for the clicked sound
+        currentAudio = new Audio(audioSource);
+        currentAudio.play(); // Play the new sound
+    });
+});
+    </script>
+</body>
+</html>
